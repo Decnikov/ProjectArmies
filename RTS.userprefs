@@ -1,0 +1,18 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\WorldObject\WorldObject.cs">
+    <Files>
+      <File FileName="RTS.sln" Line="1" Column="1" />
+      <File FileName="Assets\Player\HUD\HUD.cs" Line="1" Column="1" />
+      <File FileName="Assets\Player\Player.cs" Line="1" Column="1" />
+      <File FileName="Assets\RTS\ResourceManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Player\UserInput.cs" Line="1" Column="1" />
+      <File FileName="Assets\WorldObject\WorldObject.cs" Line="29" Column="2" />
+      <File FileName="Assets\WorldObject\Building\Building.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
