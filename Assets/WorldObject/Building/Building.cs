@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
-using System.Collections;
 
 public class Building : WorldObject {
 	
-
-	// Use this for initialization
+	/*** Game Engine methods, all can be overridden by subclass ***/
+	
 	protected override void Awake() {
 		base.Awake();
 	}
