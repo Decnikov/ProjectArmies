@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+using RTS;
 namespace RTS {
 	public static class ResourceManager {
 		public static int ScrollWidth { get { return 15; } }
@@ -9,7 +9,14 @@ namespace RTS {
 		public static float RotateSpeed { get { return 100; } }
 		public static float MinCameraHeight { get { return 10; } }
 		public static float MaxCameraHeight { get { return 40; } }
-		
+		private static GUISkin selectBoxSkin;
+		public static GUISkin SelectBoxSkin { get { return selectBoxSkin; } }
+		private static Bounds invalidBounds = new Bounds(new Vector3(-99999, -99999, -99999), new Vector3(0, 0, 0));
+		public static Bounds InvalidBounds { get { return invalidBounds; } }
+
+		public static void StoreSelectBoxItems(GUISkin skin) {
+			selectBoxSkin = skin;
+		}
 		private static Vector3 invalidPosition = new Vector3(-99999, -99999, -99999);
 		public static Vector3 InvalidPosition { get { return invalidPosition; } }
 	}

@@ -1,9 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
+using RTS;
 
 public class HUD : MonoBehaviour {
-	
-	public GUISkin resourceSkin, ordersSkin;
+
+	public Rect GetPlayingArea() {
+		return new Rect(0, RESOURCE_BAR_HEIGHT, Screen.width - ORDERS_BAR_WIDTH, Screen.height - RESOURCE_BAR_HEIGHT);
+	}
+
+	public GUISkin resourceSkin, ordersSkin, selectBoxSkin;
 	
 	private Player player;
 	
@@ -14,6 +19,7 @@ public class HUD : MonoBehaviour {
 	
 	void Start () {
 		player = transform.root.GetComponent<Player>();
+		ResourceManager.StoreSelectBoxItems(selectBoxSkin);
 	}
 	
 	void OnGUI () {
